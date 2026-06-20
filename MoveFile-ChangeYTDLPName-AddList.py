@@ -7,10 +7,10 @@ import re
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-src_dir_toMove= r"C:\YT_DLP"
-src_dir_name = r"C:\YT_DLP\Music"
-file_ext = 'mp3'
-dest_dir = r"C:\YT_DLP\Music"
+src_dir_toMove= r""
+src_dir_name = r""
+file_ext = ''
+dest_dir = r""
 
 def move_files_by_extension(src_dir,dest_dir):
     # Move files
