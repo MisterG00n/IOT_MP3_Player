@@ -15,55 +15,7 @@ int shuffledList[totalTracks];
 
 const char* songNames[] = {
     "",
-  "Aiobahn +81 feat. KOTOKO - INTERNET OVERDOSE (Official Music Video) [Theme for NEEDY GIRL OVERDOSE] ",
-  "DJ OKAWARI feat. Kaori Sawada 「Everything's Alright」 ",
-  "DJ OKAWARI 「Perfect Blue -Strings Ver.-」 ",
-  "Eclipse ",
-  "Harmonious ",
-  "Koino Uta ",
-  "Lost ",
-  "Medieval Music - Cobblestone Village ",
-  "Mili - Bulbel / ENDER LILIES: Quietus of the Knights ",
-  "Mili - Skin-Deep Comedy (＂魔法使いの約束＂ Part 2 theme song) ",
-  "Mili - YUBIKIRI-GENMAN -special edit- ",
-  "Moonline ",
-  "Natsu No Ao ",
-  "RIDDLE JOKER OP 主題歌「astral ability」/橋本みゆき・佐咲紗花【Full】【歌詞あり】 ",
-  "ReoNa 『ないない』-Music Video- ",
-  "ReoNa 『シャル・ウィ・ダンス？』-Music Video- (TVアニメ「シャドーハウス 2nd Season」OPテーマ) ",
-  "ReoNa 『生命線』-Music Video-（月姫 -A piece of blue glass moon- THEME SONG E.P.) ",
-  "SawanoHiroyuki[nZk]:Jean-Ken Johnny & TAKUMA『PROVANT』x TVアニメ『Fate/strange Fake』Collaboration Movie ",
-  "Seimeisen ",
-  "TWRP - Atomic Karate ",
-  "Tsuki No Kioku ",
-  "Tsukihime: re ",
-  "VITA -The Days- ",
-  "Warm and Small Light ",
-  "Y1K ",
-  "Yosuga no Sora Opening [FULL] ",
-  "[SUB] Arknights EP『Heavenly Me』vo. RINA from TOGENASHI TOGEARI ┃ Exusiai the New Covenant ",
-  "unknown ",
-  "「英雄の詩篇 / Eiyuu no shihen」(歌：ダズビー / DAZBEE) ",
-  "【IA】Six Trillion Years and Overnight Story【VOCALOID-PV】 ",
-  "【千恋＊万花】キズナヒトツ【ムラサメ】 ",
-  "いのちの名前 (木村弓) arranged 2021ver.／ダズビー COVER ",
-  "すーぱー☆あふぇくしょん ",
-  "つきひめ! - Tsu! Ki! Hi! Me! - Tsukihime 月姫 Remake OST ",
-  "とある竜の恋の歌 - 中文字幕 ",
-  "むかしむかし、あるところに - Once Upon a Time - Tsukihime 月姫 Remake OST ",
-  "めんたいコズミック (feat. nicamoq) ",
-  "インドア系ならトラックメイカー ",
-  "ダンスフロアの果実 ",
-  "ダ・カーポII 〜あさきゆめみし君と〜 ",
-  "ハッピーエンド (「生命線」 piano ver.) - Happy End (Lifeline piano Ver.) - Tsukihime 月姫 Remake OST ",
-  "ヨスガノソラ メインテーマ-記憶- ",
-  "ヨスガノソラ メインテーマ-遠い空へ- ",
-  "ロボティックガール (feat. nicamoq) ",
-  "今はもう遠く - Now So Far Away - Tsukihime 月姫 Remake OST ",
-  "刹那の誓い ",
-  "千恋＊万花 主題歌「恋ひ恋ふ縁」/ KOTOKO【Full】【日中歌詞翻譯】 ",
-  "忘れじの言の葉 (安次嶺希和子)  ／ダズビー COVER ",
-  "輝く君の詩 ",
+
     };
 
  
@@ -158,19 +110,19 @@ void PauseUnpauseLoop() {
     if (loopState = 0){
       loopState = 1;
       myDFPlayer.enableLoop();
-      Serial.println("Looping ")
+      Serial.println("Looping ");
       Serial.print(songNames[currentTrack]);
     }
     if (loopState = 1){
       loopState = 2;
       myDFPlayer.disableLoop();
       myDFPlayer.enableLoopAll();
-      Serial.println("Looping the playlist")
+      Serial.println("Looping the playlist");
     }
     if (loopState = 2){
       loopState = 0;
       myDFPlayer.disableLoopAll(); 
-      Serial.println("Stopped Looping")
+      Serial.println("Stopped Looping");
       Serial.print(songNames[currentTrack]);
     }
     
