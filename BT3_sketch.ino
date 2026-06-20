@@ -111,18 +111,21 @@ void PauseUnpauseLoop() {
       myDFPlayer.enableLoop();
       Serial.println("Looping ");
       Serial.print(songNames[currentTrack]);
+      delay(500);
     }
     if (loopState == 1){
       loopState = 2;
       myDFPlayer.disableLoop();
       myDFPlayer.enableLoopAll();
       Serial.println("Looping the playlist");
+      delay(500);
     }
-    if (loopState = 2){
+    if (loopState == 2){
       loopState = 0;
       myDFPlayer.disableLoopAll(); 
       Serial.println("Stopped Looping");
       Serial.print(songNames[currentTrack]);
+      delay(500);
     }
     
   }
