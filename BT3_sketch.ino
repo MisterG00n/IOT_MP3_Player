@@ -15,8 +15,7 @@ int shuffledList[totalTracks];
 
 const char* songNames[] = {
     "",
-
-    };
+      };
 
  
 int lastStateStart = HIGH; 
@@ -107,13 +106,13 @@ void PauseUnpauseLoop() {
       millis() - pressStartTime >= 1000) {
 
     longPressDetected = true;
-    if (loopState = 0){
+    if (loopState == 0){
       loopState = 1;
       myDFPlayer.enableLoop();
       Serial.println("Looping ");
       Serial.print(songNames[currentTrack]);
     }
-    if (loopState = 1){
+    if (loopState == 1){
       loopState = 2;
       myDFPlayer.disableLoop();
       myDFPlayer.enableLoopAll();
